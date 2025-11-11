@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoTech - Oficina de Motos</title>
+    <meta name="description" content="MotoTech - Especialistas em manutenção e reparo de motos. Oferecemos serviços profissionais para todas as marcas e modelos.">
+    <meta name="keywords" content="oficina de motos, manutenção de motos, reparo de motos, motopeças, motos niterói">
+    <meta name="author" content="MotoTech">
+    <link rel="canonical" href="https://mototech.com.br">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/promotions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#inicio" class="nav-logo">
+                <i class="fas fa-motorcycle"></i>
+                <span>MotoTech</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link active" data-section="inicio">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link" data-section="sobre">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Sobre Nós</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicos" class="nav-link" data-section="servicos">
+                            <i class="fas fa-tools"></i>
+                            <span>Serviços</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos" class="nav-link" data-section="produtos">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Produtos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#promocoes" class="nav-link" data-section="promocoes">
+                            <i class="fas fa-tag"></i>
+                            <span>Promoções</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#unidades" class="nav-link" data-section="unidades">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Unidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link" data-section="contato">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <a href="#contato" class="header-cta">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar Serviço
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <ul class="mobile-links">
+                    <li>
+                        <a href="#inicio" class="mobile-link active" data-section="inicio">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="mobile-link" data-section="sobre">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Sobre Nós</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servicos" class="mobile-link" data-section="servicos">
+                            <i class="fas fa-tools"></i>
+                            <span>Serviços</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#produtos" class="mobile-link" data-section="produtos">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Produtos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#promocoes" class="mobile-link" data-section="promocoes">
+                            <i class="fas fa-tag"></i>
+                            <span>Promoções</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#unidades" class="mobile-link" data-section="unidades">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Unidades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="mobile-link" data-section="contato">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+                    <li class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <a href="#contato" class="mobile-link bg-primary-600 text-white rounded-lg py-3 px-4 flex items-center justify-center">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            <span>Agendar Serviço</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="mobile-link" data-section="sobre">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Sobre Nós</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servicos" class="mobile-link" data-section="servicos">
+                            <i class="fas fa-tools"></i>
+                            <span>Serviços</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#produtos" class="mobile-link" data-section="produtos">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Produtos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#promocoes" class="mobile-link" data-section="promocoes">
+                            <i class="fas fa-tag"></i>
+                            <span>Promoções</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#unidades" class="mobile-link" data-section="unidades">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Unidades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="mobile-link" data-section="contato">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <button id="mobile-theme-toggle" class="mobile-theme-toggle">
+                    <span>Alternar Tema</span>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Carousel -->
+    <section id="inicio" class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+            <div class="carousel-slide" style="background-image: url('https://wallpapers.com/images/hd/bmw-in-forest-1920x1080-motorcycle-w8ia5g5wn7iiciaq.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('https://www.lv8.it/storage/articles/598_phpSN5Y6E_1675083406.webp');"></div>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="animate-fadeIn">MotoTech</h1>
+            <p class="animate-fadeInUp">Oficina Especializada em Motos</p>
+            <p class="hero-subtitle animate-fadeInUp delay-1">Manutenção profissional para todas as marcas</p>
+        </div>
+        
+        <div class="carousel-dots">
+            <button class="carousel-dot active" data-index="0"></button>
+            <button class="carousel-dot" data-index="1"></button>
+            <button class="carousel-dot" data-index="2"></button>
+        </div>
+        
+        <!-- Banner de Promoções -->
+        <div class="promo-banner">
+            <div class="promo-slide active">
+                <span class="promo-tag">PROMOÇÃO</span>
+                <span>10% OFF na primeira revisão</span>
+                <a href="#contato" class="promo-cta">Saiba mais <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="promo-slide">
+                <span class="promo-tag">LANÇAMENTO</span>
+                <span>Frete grátis para revisão completa</span>
+                <a href="#servicos" class="promo-cta">Conferir <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="promo-slide">
+                <span class="promo-tag">DESTAQUE</span>
+                <span>Kit de revisão com 15% de desconto</span>
+                <a href="#produtos" class="promo-cta">Aproveitar <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title animate-fadeInUp">Nossa História</h2>
+            <p class="section-subtitle animate-fadeInUp delay-1">Uma jornada de paixão por motos e compromisso com a excelência</p>
+            
+            <div class="about-text animate-fadeInUp delay-1">
+                <p>
+                    Tudo começou com uma paixão: a liberdade sobre duas rodas. Em 2010, em uma pequena garagem de Niterói, nasceu o sonho de criar uma loja que fosse mais do que um ponto de venda — uma verdadeira comunidade para amantes de motos. Com dedicação, conhecimento técnico e respeito pelos clientes, transformamos essa ideia em realidade. Ao longo dos anos, crescemos junto com nossos parceiros e clientes, sempre mantendo o compromisso com qualidade, confiança e atendimento personalizado. Hoje, somos referência em motos novas e seminovas, acessórios, manutenção e experiências que vão além da estrada. Cada moto que passa por aqui carrega uma história. E cada cliente que entra, vira parte da nossa. Porque para nós, vender motos é conectar pessoas ao que elas mais amam: a sensação de liberdade.
+                </p>
+            </div>
+            
+            <!-- Botão CTA e Estatísticas -->
+            <div class="cta-container animate-fadeInUp delay-2">
+                <a href="#contato" class="cta-button">Conheça Nossa História</a>
+                
+                <div class="stats-container">
+                    <div class="stat-item animate-fadeInUp delay-1">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-item animate-fadeInUp delay-2">
+                        <div class="stat-number">5.000+</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="stat-item animate-fadeInUp delay-3">
+                        <div class="stat-number">10.000+</div>
+                        <div class="stat-label">Serviços Realizados</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid animate-fadeInUp delay-2">
+                <div class="feature-card">
+                    <i class="fas fa-tools"></i>
+                    <h4>Equipe Qualificada</h4>
+                    <p>Profissionais certificados e experientes</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h4>Alta Qualidade</h4>
+                    <p>Produtos e serviços de primeira linha</p>
+                </div>
+            </div>
+            
+            <div class="about-image animate-fadeInUp delay-3">
+                <img src="https://www.discoveraltai.com/wp-content/uploads/2024/04/purpose-built-moto-motorcycle-workshop05.webp" alt="Nossa Oficina - Espaço moderno e equipado para atender todas as necessidades da sua moto">
+            </div>
+            
+            <!-- Por que nos escolher -->
+            <div class="why-choose-us section-padding">
+                <div class="container">
+                    <h2 class="section-title text-center">Por que escolher a MotoTech?</h2>
+                    <p class="section-subtitle text-center mb-12">Excelência em serviços e atendimento personalizado</p>
+                    
+                    <div class="features-grid">
+                        <!-- Destaque 1 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Qualidade Garantida</h3>
+                            <p>Utilizamos apenas peças originais e mão de obra especializada para garantir o melhor serviço.</p>
+                        </div>
+                        
+                        <!-- Destaque 2 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Atendimento Rápido</h3>
+                            <p>Serviços ágeis sem abrir mão da qualidade. Sua moto pronta no menor tempo possível.</p>
+                        </div>
+                        
+                        <!-- Destaque 3 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Garantia</h3>
+                            <p>Todos os nossos serviços possuem garantia, proporcionando total tranquilidade para você.</p>
+                        </div>
+                        
+                        <!-- Destaque 4 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Equipe Especializada</h3>
+                            <p>Profissionais certificados e experientes para cuidar da sua moto com excelência.</p>
+                        </div>
+                        
+                        <!-- Destaque 5 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3>Preço Justo</h3>
+                            <p>Oferecemos os melhores preços do mercado, com orçamento gratuito e sem surpresas.</p>
+                        </div>
+                        
+                        <!-- Destaque 6 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-car-crash"></i>
+                            </div>
+                            <h3>Guincho Grátis</h3>
+                            <p>Serviço de guincho 24h para clientes em planos de manutenção.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Depoimentos -->
+            <div class="testimonials-section section-padding bg-gray-50 dark:bg-gray-900">
+                <div class="container">
+                    <div class="text-center mb-16">
+                        <span class="text-primary-600 dark:text-primary-400 font-semibold text-sm uppercase tracking-wider">Depoimentos</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mt-2 mb-4">O Que Nossos Clientes Dizem</h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
+                    </div>
+                    
+                    <div class="testimonials-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Silva">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Carlos Silva</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">Há 1 semana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 italic">
+                                    "A melhor oficina que já levei minha moto! Atendimento excepcional e serviço de primeira qualidade. Recomendo a todos os amantes de motos!"
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Oliveira">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Ana Oliveira</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">Há 2 semanas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 italic">
+                                    "Serviço rápido e eficiente. Deixei minha moto para revisão e fiquei impressionada com a honestidade e profissionalismo da equipe."
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex-shrink-0">
+                                        <img class="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Roberto Santos">
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Roberto Santos</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">Há 3 dias</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 italic">
+                                    "Equipe altamente qualificada e preço justo. Minha moto nunca esteve tão bem cuidada. Com certeza voltarei sempre que precisar!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-12">
+                        <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300 shadow-sm">
+                            Deixe seu depoimento
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blog e Conteúdo -->
+            <section class="blog-section section-padding bg-white dark:bg-gray-900">
+                <div class="container">
+                    <div class="text-center mb-16">
+                        <span class="text-primary-600 dark:text-primary-400 font-semibold text-sm uppercase tracking-wider">Blog</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mt-2 mb-4">Dicas e Novidades</h2>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Fique por dentro das últimas notícias, dicas de manutenção e novidades do mundo das motos.</p>
+                        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full mt-4"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Artigo 1 -->
+                        <article class="blog-card group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                     alt="Manutenção preventiva de motos" 
+                                     class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4">
+                                    <span class="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Manutenção</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                    <i class="far fa-calendar-alt mr-2"></i>
+                                    <span>10 de Novembro, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <i class="far fa-clock mr-1"></i>
+                                    <span>5 min de leitura</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    <a href="#" class="hover:underline">Guia Completo de Manutenção Preventiva para Sua Moto</a>
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Aprenda como manter sua moto em perfeito estado com nosso guia completo de manutenção preventiva. Dicas essenciais para prolongar a vida útil do seu veículo.
+                                </p>
+                                <a href="#" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:underline">
+                                    Ler mais
+                                    <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <!-- Artigo 2 -->
+                        <article class="blog-card group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="relative overflow-hidden">
+                                <img src="https://extra.globo.com/incoming/16431626-c19-f38/w976h550-PROP/pneus-de-moto.jpg" 
+                                     alt="Pneus de moto" 
+                                     class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4">
+                                    <span class="inline-block bg-yellow-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Segurança</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                    <i class="far fa-calendar-alt mr-2"></i>
+                                    <span>3 de Novembro, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <i class="far fa-clock mr-1"></i>
+                                    <span>4 min de leitura</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    <a href="#" class="hover:underline">Como Saber Quando Trocar os Pneus da Sua Moto</a>
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Entenda os sinais de desgaste dos pneus e saiba quando é o momento ideal para trocá-los. Sua segurança nas estradas começa com pneus em bom estado.
+                                </p>
+                                <a href="#" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:underline">
+                                    Ler mais
+                                    <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <!-- Artigo 3 -->
+                        <article class="blog-card group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div class="relative overflow-hidden">
+                                <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2024/03/moto-eletrica-pulse-gogoro.png" 
+                                     alt="Motos elétricas" 
+                                     class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4">
+                                    <span class="inline-block bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Tecnologia</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
+                                    <i class="far fa-calendar-alt mr-2"></i>
+                                    <span>25 de Outubro, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <i class="far fa-clock mr-1"></i>
+                                    <span>7 min de leitura</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    <a href="#" class="hover:underline">O Futuro é Elétrico: O que Esperar das Motos do Amanhã</a>
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                    Conheça as inovações e tendências do mercado de motos elétricas. Descubra como a mobilidade sustentável está transformando o mundo das duas rodas.
+                                </p>
+                                <a href="#" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:underline">
+                                    Ler mais
+                                    <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="text-center mt-12">
+                        <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-300 shadow-sm hover:shadow-md">
+                            Ver todos os artigos
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Mapa de Localização -->
+            <div class="map-section animate-fadeInUp delay-3">
+                <div class="brands-showcase">
+                    <h2 class="section-title" id="marcas-parceiras">Trabalhamos com as melhores marcas</h2>
+                    <p class="brands-subtitle">Parceiros oficiais das principais marcas do mercado</p>
+                    <div class="brands-grid" role="list" aria-labelledby="marcas-parceiras">
+                        <div class="brand-item" role="listitem" tabindex="0" aria-label="Honda">
+                            <div class="brand-logo">
+                                <img 
+                                    src="./img/honda.png" 
+                                    alt="Logo Honda" 
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                    decoding="async">
+                            </div>
+                            <span class="brand-name">Honda</span>
+                        </div>
+                        <div class="brand-item" role="listitem" tabindex="0" aria-label="Yamaha">
+                            <div class="brand-logo">
+                                <img 
+                                    src="./img/yamaha.png" 
+                                    alt="Logo Yamaha" 
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                    decoding="async">
+                            </div>
+                            <span class="brand-name">Yamaha</span>
+                        </div>
+                        <div class="brand-item" role="listitem" tabindex="0" aria-label="Suzuki">
+                            <div class="brand-logo">
+                                <img 
+                                    src="./img/suzuki.png" 
+                                    alt="Logo Suzuki" 
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                    decoding="async">
+                            </div>
+                            <span class="brand-name">Suzuki</span>
+                        </div>
+                        <div class="brand-item" role="listitem" tabindex="0" aria-label="Kawasaki">
+                            <div class="brand-logo">
+                                <img 
+                                    src="./img/kawasaki.png" 
+                                    alt="Logo Kawasaki" 
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                    decoding="async">
+                            </div>
+                            <span class="brand-name">Kawasaki</span>
+                        </div>
+                        <div class="brand-item" role="listitem" tabindex="0" aria-label="Harley-Davidson">
+                            <div class="brand-logo">
+                                <img 
+                                    src="./img/harleydavidson.png" 
+                                    alt="Logo Harley-Davidson" 
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                    decoding="async">
+                            </div>
+                            <span class="brand-name">Harley-Davidson</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="visit-us-container">
+                    <div class="section-header">
+                        <i class="fas fa-map-marker-alt visit-icon"></i>
+                        <h3 class="section-title">Venha nos visitar</h3>
+                        <p class="visit-address">Rua das Motos, 1234 - Centro, Niterói - RJ</p>
+                    </div>
+                    
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.4563925939336!2d-43.17972588448932!3d-22.906843143653045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjYiUyA0M8KwMTAnNTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Nossa Localização - MotoTech">
+                        </iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4><i class="far fa-clock"></i> Horário de Funcionamento</h4>
+                        <ul>
+                            <li>Segunda a Sexta: <span>09:00 - 19:00</span></li>
+                            <li>Sábado: <span>09:00 - 14:00</span></li>
+                            <li>Domingo: <span>Fechado</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="section bg-gray-50 dark:bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Oferecemos uma ampla gama de serviços para manter sua moto em perfeito estado</p>
+            
+            <div class="services-grid">
+                <!-- Serviço 1 -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3>Troca de Óleo</h3>
+                        <p>Troca de óleo e filtro com produtos de alta qualidade para garantir o melhor desempenho do seu motor.</p>
+                        <a href="#contato" class="service-link">Saiba mais →</a>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1583123810408-23e7b5d1af9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Revisão Completa</h3>
+                        <p>Revisão completa do seu veículo, incluindo freios, suspensão, pneus, elétrica e muito mais.</p>
+                        <a href="#contato" class="service-link">Saiba mais →</a>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1601758264255-2e0bc0edf8ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Pintura Personalizada</h3>
+                        <p>Personalize sua moto com pinturas exclusivas e de alta qualidade, feitas por profissionais experientes.</p>
+                        <a href="#contato" class="service-link">Saiba mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">As melhores marcas e acessórios para sua moto</p>
+            
+            <div class="products-grid">
+                <!-- Produtos serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promoções Section -->
+    <section id="promocoes" class="section bg-gray-50 dark:bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Promoções Especiais</h2>
+            <p class="section-subtitle">Aproveite nossas ofertas por tempo limitado</p>
+            
+            <div class="promo-grid">
+                <!-- Promoções serão carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Unidades Section -->
+    <section id="unidades" class="section">
+        <div class="container">
+            <h2 class="section-title">Nossas Unidades</h2>
+            <p class="section-subtitle">Encontre a unidade mais próxima de você</p>
+            
+            <div class="units-grid">
+                <!-- Unidade 1 -->
+                <div class="unit-card" data-unit="centro">
+                    <div class="unit-image" style="background-image: url('https://1.bp.blogspot.com/-etpY5pGtcm0/Vb-mpWMap8I/AAAAAAAACxw/yRmmZ2AiAbM/s1600/Fachada%2BPRO%2BMOTOS.jpg');">
+                        <div class="unit-overlay">
+                            <h3>Unidade Centro</h3>
+                            <span class="view-more">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="unit-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Rua das Motos, 123 - Centro</p>
+                        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    </div>
+                </div>
+
+                <!-- Unidade 2 -->
+                <div class="unit-card" data-unit="zona-sul">
+                    <div class="unit-image" style="background-image: url('https://i.pinimg.com/originals/5f/99/43/5f994382f7be99b7b81839e94aa25ce5.jpg');">
+                        <div class="unit-overlay">
+                            <h3>Unidade Zona Sul</h3>
+                            <span class="view-more">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="unit-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. das Nações, 456 - Zona Sul</p>
+                        <p><i class="fas fa-phone"></i> (11) 9876-5432</p>
+                    </div>
+                </div>
+
+                <!-- Unidade 3 -->
+                <div class="unit-card" data-unit="zona-norte">
+                    <div class="unit-image" style="background-image: url('https://conceptualminds.com/wp-content/uploads/2022/08/Wiygul-Auto-Shop-Exterior.jpg');">
+                        <div class="unit-overlay">
+                            <h3>Unidade Zona Norte</h3>
+                            <span class="view-more">Ver detalhes <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="unit-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - Zona Norte</p>
+                        <p><i class="fas fa-phone"></i> (11) 2345-6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Unidades -->
+        <div id="unitModal" class="unit-modal">
+            <div class="unit-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-image"></div>
+                    <div class="modal-info">
+                        <h2 class="modal-title"></h2>
+                        <div class="modal-details"></div>
+                        <div class="modal-features"></div>
+                        <a href="#contato" class="cta-button modal-cta">Agendar Visita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section bg-gray-50 dark:bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Tire suas dúvidas ou agende um horário</p>
+            
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="orcamento">Orçamento</option>
+                            <option value="agendamento">Agendamento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@mototech.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Motos, 123 - Centro, São Paulo - SP</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5521999999999?text=Olá! Gostaria de agendar um serviço." 
+       class="whatsapp-float z-50" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Farei isso para você agora. Por favor, aguarde um momento.">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Coluna 1: Sobre -->
+                <div class="footer-col">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-motorcycle text-3xl text-primary-500 mr-3"></i>
+                        <h3 class="text-2xl font-bold text-white">Moto<span class="text-primary-500">Tech</span></h3>
+                    </div>
+                    <p class="mb-6 text-gray-400">Especialistas em manutenção e reparo de motos, oferecendo serviços de qualidade há mais de 10 anos no mercado.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="footer-col">
+                    <h4 class="text-lg font-semibold text-white mb-6 pb-2 border-b border-gray-700">Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="footer-link">Início</a></li>
+                        <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="footer-link">Serviços</a></li>
+                        <li><a href="#produtos" class="footer-link">Produtos</a></li>
+                        <li><a href="#unidades" class="footer-link">Unidades</a></li>
+                        <li><a href="#contato" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Horário de Funcionamento -->
+                <div class="footer-col">
+                    <h4 class="text-lg font-semibold text-white mb-6 pb-2 border-b border-gray-700">Horário de Atendimento</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Segunda - Sexta</span>
+                            <span class="text-white">08:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Sábado</span>
+                            <span class="text-white">09:00 - 14:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Domingo</span>
+                            <span class="text-red-400">Fechado</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 bg-gray-800 p-4 rounded-lg">
+                        <h5 class="text-white font-medium mb-2">Atendimento Emergencial 24h</h5>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-primary-500 mr-2"></i>
+                            <a href="tel:+5521999999999" class="text-white hover:text-primary-400 transition-colors">(21) 99999-9999</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 4: Newsletter -->
+                <div class="footer-col">
+                    <h4 class="text-lg font-semibold text-white mb-6 pb-2 border-b border-gray-700">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Inscreva-se para receber nossas ofertas e novidades.</p>
+                    <form class="space-y-3">
+                        <div>
+                            <input type="email" placeholder="Seu melhor e-mail" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 text-white placeholder-gray-500">
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                            <span>Assinar</span>
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                    <div class="mt-6">
+                        <h5 class="text-white font-medium mb-3">Formas de Pagamento</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <div class="bg-white p-2 rounded-md">
+                                <i class="fab fa-cc-visa text-2xl text-blue-900"></i>
+                            </div>
+                            <div class="bg-white p-2 rounded-md">
+                                <i class="fab fa-cc-mastercard text-2xl text-red-600"></i>
+                            </div>
+                            <div class="bg-white p-2 rounded-md">
+                                <i class="fab fa-cc-paypal text-2xl text-blue-600"></i>
+                            </div>
+                            <div class="bg-white p-2 rounded-md">
+                                <i class="fab fa-pix text-2xl text-green-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2025 MotoTech. Todos os direitos reservados.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Termos de Uso</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Política de Privacidade</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors text-sm">Política de Cookies</a>
+                    </div>
+                </div>
+                <div class="mt-4 text-center md:text-left">
+                    <p class="text-xs text-gray-600">MotoTech LTDA - CNPJ: 12.345.678/0001-90 - Rua das Motos, 123 - Centro, Niterói/RJ - CEP: 24000-000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="fixed bottom-6 left-6 bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-700 transition-colors duration-300 opacity-0 invisible z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/promo-banner.js"></script>
+    <script src="js/units.js"></script>
+    <script>
+        // Botão Voltar ao Topo
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
