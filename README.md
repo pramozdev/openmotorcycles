@@ -135,4 +135,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-<p align="center">Desenvolvido com ❤️ pela equipe MotoTech</p>
+<p align="center">Desenvolvido com ❤️ por P.raMoZ</p>
