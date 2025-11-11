@@ -1,15 +1,15 @@
 /* Botão Flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 15px;
     background-color: #25d366;
     color: white;
-    border-radius: 50%;
+    border-radius: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     z-index: 100;
     display: flex;
@@ -19,12 +19,71 @@
     animation: pulse 2s infinite;
     border: none;
     cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .whatsapp-float:hover {
     background-color: #128c7e;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    width: auto;
+    padding: 0 20px;
+    border-radius: 50px;
+}
+
+/* Estilo para o texto do botão */
+.whatsapp-text {
+    display: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .whatsapp-float {
+        width: auto;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        font-size: 30px;
+        padding: 0 25px;
+    }
+    
+    .whatsapp-text {
+        display: inline-block;
+    }
+    
+    .whatsapp-float i {
+        margin-right: 10px;
+    }
+}
+
+/* Estilos para telas móveis */
+@media (max-width: 767px) {
+    .whatsapp-float {
+        bottom: 70px; /* Ajuste para não cobrir a barra de navegação */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .whatsapp-float:hover {
+        width: auto;
+        padding: 0 15px;
+    }
+    
+    .whatsapp-float:hover .whatsapp-text {
+        display: inline-block;
+        font-size: 14px;
+    }
+    
+    /* Ajuste adicional se houver um menu fixo na parte inferior */
+    .mobile-bottom-nav {
+        bottom: 70px !important;
+    }
 }
 
 @keyframes pulse {
@@ -42,13 +101,13 @@
 /* Botão CTA no Cabeçalho */
 .header-cta {
     margin-left: 15px;
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem;
     background: var(--gradient-secondary);
     color: white;
     border: none;
-    border-radius: var(--radius-full);
+    border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -56,15 +115,17 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
-    box-shadow: var(--shadow);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
     flex-shrink: 0;
     letter-spacing: 0.5px;
+    height: 40px;
+    line-height: 1;
 }
 
 .header-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
     background: linear-gradient(135deg, var(--secondary-dark), #ea580c);
 }
 
@@ -76,9 +137,9 @@
 /* Responsividade do botão CTA */
 @media (max-width: 1024px) {
     .header-cta {
-        padding: 8px 14px;
+        padding: 0.5rem 1rem;
         font-size: 0.85rem;
-        gap: 5px;
+        height: 38px;
     }
     
     .header-cta i {
@@ -88,27 +149,32 @@
 
 @media (max-width: 768px) {
     .header-cta {
-        margin-left: 10px;
-        padding: 7px 12px;
-        font-size: 0.8rem;
-        gap: 4px;
+        margin-left: 8px;
+        padding: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    
+    .header-cta span {
+        display: none;
     }
     
     .header-cta i {
-        font-size: 0.85rem;
+        font-size: 1rem;
+        margin: 0;
     }
 }
 
 @media (max-width: 480px) {
     .header-cta {
-        padding: 6px 10px;
-        font-size: 0.75rem;
-        gap: 3px;
-        margin-left: 8px;
+        margin-left: 6px;
+        width: 34px;
+        height: 34px;
     }
     
     .header-cta i {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
     
     .header-cta span {
@@ -1361,6 +1427,7 @@ input:focus, textarea:focus, select:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    margin-bottom: 2.5rem; /* Adicionado espaçamento abaixo da seção de recursos */
     margin-top: 2.5rem;
 }
 
